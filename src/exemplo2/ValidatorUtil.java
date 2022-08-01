@@ -46,7 +46,10 @@ public class ValidatorUtil {
 	}
 
 	public static void validarNome(String value) {
-		// TODO Implementar o método
+		String[] nomes = value.split(" ");
+		if(nomes.length < 2) {
+			throw new RuntimeException("Digite seu nome completo");
+		}
 	}
 
 }
